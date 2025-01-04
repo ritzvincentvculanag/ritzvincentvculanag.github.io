@@ -1,6 +1,7 @@
 /* Colors */
 :root {
-  --clr-bg-light: hsl(246, 25%, 85%);
+  --clr-bg-light: hsl(0, 0%, 95%);
+  --clr-bg-dark: hsl(0, 0%, 7%);
   --clr-accent-folly: hsl(354, 100%, 64%);
   --clr-accent-citrine: hsl(52, 73%, 56%);
   --clr-links: hsl(199, 72%, 41%);
@@ -19,6 +20,7 @@
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
+  background-color: var(--clr-bg-light);
 }
 
 h1,
@@ -40,4 +42,101 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* Navbar styles */
+nav {
+  font-family: "IBM Plex Mono", monospace;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+nav h1 {
+  font-size: 1.2rem;
+}
+
+nav ul {
+  position: absolute;
+  top: 0;
+  right: -400px;
+  height: 100%;
+  width: 200px;
+  transition: 0.3s ease-in-out;
+  padding: 1em;
+  background-color: var(--clr-bg-light);
+  border-left: 2px solid var(--clr-bg-dark);
+}
+
+@media screen and (min-width: 720px) {
+  nav ul {
+    position: relative;
+    margin-left: auto;
+    border: none;
+    display: flex;
+    width: auto;
+    gap: 1em;
+    padding: 0;
+    right: 0;
+  }
+}
+
+nav ul li {
+  margin-bottom: 0.5em;
+}
+
+nav ul a {
+  color: var(--clr-bg-dark);
+  transition: 0.2s ease-out;
+}
+
+nav ul a:hover {
+  color: var(--clr-accent-folly);
+  transition: 0.2s ease-in;
+  text-decoration: underline;
+}
+
+nav #nav-main-trigger {
+  margin-left: auto;
+  transition: 0.2s ease-out;
+}
+
+@media screen and (min-width: 720px) {
+  nav #nav-main-trigger {
+    display: none;
+  }
+}
+
+nav #nav-main-trigger:hover {
+  color: var(--clr-accent-folly);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+nav #nav-main-return {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+@media screen and (min-width: 720px) {
+  nav #nav-main-return {
+    display: none;
+  }
+}
+
+nav #nav-main-return:hover {
+  color: var(--clr-accent-folly);
+  transition: 0.2s ease-out;
 }
