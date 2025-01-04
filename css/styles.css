@@ -21,6 +21,7 @@
 body {
   font-family: "IBM Plex Sans", sans-serif;
   background-color: var(--clr-bg-light);
+  overflow-x: hidden;
 }
 
 h1,
@@ -92,9 +93,16 @@ nav ul li {
   margin-bottom: 0.5em;
 }
 
+@media screen and (min-width: 720px) {
+  nav ul li {
+    margin-bottom: 0;
+  }
+}
+
 nav ul a {
   color: var(--clr-bg-dark);
   transition: 0.2s ease-out;
+  display: inline-block;
 }
 
 nav ul a:hover {
