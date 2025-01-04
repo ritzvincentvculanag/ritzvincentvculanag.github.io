@@ -148,3 +148,16 @@ nav #nav-main-return:hover {
   color: var(--clr-accent-folly);
   transition: 0.2s ease-out;
 }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 4em);
+}
+
+main p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
