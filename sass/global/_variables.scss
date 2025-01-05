@@ -1,6 +1,6 @@
-$breakpoint-mobile: 375px;
-$breakpoint-tablet: 720px;
-$breakpoint-desktop: 1200px;
+$bp-mobile: 375px;
+$bp-tablet: 720px;
+$bp-desktop: 1200px;
 
 $clr-bg-light: hsl(0, 0%, 95%);
 $clr-bg-dark: hsl(0, 0%, 7%);
@@ -8,3 +8,6 @@ $clr-accent-folly: hsl(354, 100%, 64%);
 $clr-accent-citrine: hsl(52, 73%, 56%);
 $clr-links: hsl(199, 72%, 41%);
 $clr-headers: hsl(188, 45%, 14%);
+
+$font-mono: "IBM Plex Mono", monospace;
+$font-sans: "IBM Plex Sans", sans-serif;
