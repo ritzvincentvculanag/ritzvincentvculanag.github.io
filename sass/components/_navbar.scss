@@ -1,0 +1,95 @@
+@use "../global/variables" as v;
+
+.nav-main {
+  font-family: v.$font-mono;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: v.$bp-desktop) {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  &__trigger {
+    margin-left: auto;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+
+    @media screen and (min-width: v.$bp-tablet) {
+      display: none;
+    }
+
+    &:hover {
+      color: v.$clr-accent-folly;
+      transition: 0.2s ease-in;
+      cursor: pointer;
+    }
+  }
+
+  &__links {
+    position: absolute;
+    top: 0;
+    right: -400px;
+    width: 200px;
+    height: 100%;
+    transition: 0.2s ease-in;
+    padding: 1em;
+    background-color: v.$clr-bg-light;
+    border-left: 2px solid v.$clr-bg-dark;
+
+    @media screen and (min-width: v.$bp-tablet) {
+      position: relative;
+      margin-left: auto;
+      border: none;
+      display: flex;
+      width: auto;
+      gap: 1em;
+      padding: 0;
+      right: 0;
+    }
+
+    &__return {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      margin-bottom: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s ease-in;
+
+      @media screen and (min-width: v.$bp-tablet) {
+        display: none;
+      }
+
+      &:hover {
+        color: v.$clr-accent-folly;
+        transition: 0.2s ease-out;
+      }
+    }
+
+    li {
+      margin-bottom: 0.5em;
+
+      @media screen and (min-width: v.$bp-tablet) {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: var(--clr-bg-dark);
+        transition: 0.2s ease-out;
+        display: inline-block;
+
+        &:hover {
+          color: var(--clr-accent-folly);
+          transition: 0.2s ease-in;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
