@@ -1,6 +1,6 @@
-const navMainTrigger = document.querySelector("#nav-main-trigger");
-const navMainReturn = document.querySelector("#nav-main-return");
-const navMain = document.querySelector("#nav-main");
+const navMain = document.querySelector(".nav-main__links");
+const navMainTrigger = document.querySelector(".nav-main__trigger");
+const navMainReturn = document.querySelector(".nav-main__links__return");
 
 let isToggled = false;
 
@@ -19,6 +19,8 @@ function triggerNavBar() {
   const rightValue = isToggled ? "-400px" : "0px";
   navMain.style.right = rightValue;
   isToggled = !isToggled;
+
+  console.log("Hello");
 }
 
 function resetNavBar() {
