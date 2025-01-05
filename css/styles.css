@@ -51,4 +51,106 @@ img {
   height: auto;
 }
 
+.nav-main {
+  font-family: "IBM Plex Mono", monospace;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .nav-main {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+.nav-main h1 {
+  font-size: 1rem;
+}
+.nav-main__trigger {
+  margin-left: auto;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+@media screen and (min-width: 720px) {
+  .nav-main__trigger {
+    display: none;
+  }
+}
+.nav-main__trigger:hover {
+  color: hsl(354, 100%, 64%);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+.nav-main__links {
+  position: absolute;
+  top: 0;
+  right: -400px;
+  width: 200px;
+  height: 100%;
+  transition: 0.2s ease-in;
+  padding: 1em;
+  background-color: hsl(0, 0%, 95%);
+  border-left: 2px solid hsl(0, 0%, 7%);
+}
+@media screen and (min-width: 720px) {
+  .nav-main__links {
+    position: relative;
+    margin-left: auto;
+    border: none;
+    display: flex;
+    width: auto;
+    gap: 1em;
+    padding: 0;
+    right: 0;
+  }
+}
+.nav-main__links__return {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+@media screen and (min-width: 720px) {
+  .nav-main__links__return {
+    display: none;
+  }
+}
+.nav-main__links__return:hover {
+  color: hsl(354, 100%, 64%);
+  transition: 0.2s ease-out;
+}
+.nav-main__links li {
+  margin-bottom: 0.5em;
+}
+@media screen and (min-width: 720px) {
+  .nav-main__links li {
+    margin-bottom: 0;
+  }
+}
+.nav-main__links li a {
+  color: var(--clr-bg-dark);
+  transition: 0.2s ease-out;
+  display: inline-block;
+}
+.nav-main__links li a:hover {
+  color: var(--clr-accent-folly);
+  transition: 0.2s ease-in;
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 4em);
+}
+main p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
