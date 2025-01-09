@@ -153,4 +153,8 @@ main p {
   text-align: center;
 }
 
+body {
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=styles.css.map */
