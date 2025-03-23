@@ -1,11 +1,13 @@
 ## Stack
 
 > [!NOTE]
-> **Stack**\
-> HTML \
-> CSS \
+>
+> Technologies used in building the website are listed below
+> - HTML
+> - SCSS
 
-## Links
-
-LinkedIn: [ritzvincentculanag](https://linkedin.com/in/ritzvincentculanag) \
-Facebook: [ritzvincentvculanag](https://facebook.com/ritzvincentvculanag)
+> [!NOTE]
+>
+> Follow me on these platforms 
+> - LinkedIn: [ritzvincentculanag](https://linkedin.com/in/ritzvincentculanag)
+> - Facebook: [ritzvincentvculanag](https://facebook.com/ritzvincentvculanag)
