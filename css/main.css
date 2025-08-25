@@ -4,8 +4,31 @@
   box-sizing: border-box;
 }
 
+button.btn {
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: none;
+  display: block;
+  cursor: pointer;
+}
+
+button.btn-primary-blue {
+  background: var(--clr-blue);
+  color: var(--clr-txt-light);
+}
+
+button.btn-secondary-blue {
+  background: var(--clr-blue-bg);
+  color: var(--clr-blue);
+}
+
 header > nav,
 header > section.hero {
   width: 70%;
   margin: 0 auto;
+}
+
+header > section.hero > section.hero__cta {
+  display: flex;
+  gap: 20px;
 }
