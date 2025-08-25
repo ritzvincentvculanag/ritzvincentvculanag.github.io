@@ -1,0 +1,21 @@
+:root {
+  --clr-txt: #191918;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--clr-txt);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-txt);
+}
