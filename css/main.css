@@ -28,6 +28,25 @@ header > section.hero {
   margin: 0 auto;
 }
 
+nav {
+  padding: 30px 0;
+}
+
+nav,
+nav > ul {
+  display: flex;
+}
+
+nav > ul {
+  align-items: center;
+  margin-left: 40px;
+  gap: 20px;
+}
+
+header > section.hero {
+  margin-top: 72px;
+}
+
 header > section.hero > section.hero__cta {
   display: flex;
   gap: 20px;
