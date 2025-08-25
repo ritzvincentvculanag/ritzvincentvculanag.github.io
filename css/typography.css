@@ -1,5 +1,16 @@
 :root {
   --clr-txt: #191918;
+  --clr-txt-light: #ffffff;
+  --clr-txt-accent: #0075de;
+  --clr-txt-subtitle: #787773;
+
+  --clr-blue: #0075de;
+  --clr-blue-bg: #e8f3f9;
+
+  --fnt-light: 300;
+  --fnt-regular: 400;
+  --fnt-semi-bold: 600;
+  --fnt-bold: 700;
 }
 
 body {
@@ -18,4 +29,28 @@ li {
 a {
   text-decoration: none;
   color: var(--clr-txt);
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+header p {
+  font-size: 3rem;
+  font-weight: var(--fnt-semi-bold);
+}
+
+header p span {
+  color: var(--clr-txt-accent);
+}
+
+#ritz__tagline {
+  font-size: 2rem;
+  font-weight: var(--fnt-light);
+  margin: 32px 0;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: var(--fnt-semi-bold);
 }
