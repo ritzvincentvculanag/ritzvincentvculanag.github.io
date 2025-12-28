@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  line-height: 1.5;
+  line-height: calc(1em + 0.5rem);
   -webkit-font-smoothing: antialiased;
 }
 
